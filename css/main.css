@@ -1,0 +1,485 @@
+/********* start global style *********/
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --main-color: #343434;
+    --bg-color:#F7F7F7;
+    --text-color:#748182;
+    --icons-footerBg-color:#1C1C1C;
+}
+.main-color{
+    color: var(--main-color);
+}
+.bg-main{
+    background-color:var(--bg-color)
+}
+.text-color{
+    color: var(--text-color);
+}
+.icons-color{
+    color: var(--icons-footerBg-color);
+}
+.padding-section{
+    padding: 70px 0;
+}
+/******** end global style *******/
+
+
+/******** start nav style ********/
+.mynav {
+    background-color: transparent;
+    transition: background-color 0.3s ease; /* تأثير سلس عند التغيير */
+}
+
+.mynav.scrolled {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mynav .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.mynav.scrolled .nav-link {
+    color: black;
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #0a0a0a;
+    transition: color 0.3s ease;
+}
+.mynav.scrolled .nav-link {
+    color: black;
+}
+
+.mynav .navbar-brand {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.mynav.scrolled .navbar-brand {
+    color: black;
+}
+/******** end nav style ********/
+
+
+/******** start header style ********/
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.623),rgba(0,0,0,0.623)) , url(../imgs/bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    font-size: 60px;
+}
+header .static{
+    font-weight: 100;
+}
+.home .hello{
+    font-size: 38px;
+}
+.home .icons a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.207);
+    border-radius: 50%;
+    text-align: center;
+}
+/******** end header style ********/
+
+
+/******** start about style ********/
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    position: relative;
+    width: 80%;
+    margin-left: 50px;
+    z-index: 2;
+}
+.about .about-image:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about .skills {
+    margin-top: 30px;
+  }
+  .about .skills .item {
+    margin-bottom: 30px;
+  }
+  .about .skills h6 {
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  .about .skills .skills-progress {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+  }
+  .about .skills .skills-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .about .skills .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 11px;
+    color: #fff;
+  }
+.about .btuns .download{
+    transition: color, background-color .5s;
+}
+.about .btuns .download:hover{
+    background-color: #ede7e7;
+    color: #1C1C1C;
+
+}
+.about .btuns .contact{
+    transition: color, background-color .5s;
+}
+.about .btuns .contact:hover{
+    background-color:#1C1C1C;
+    color: #ffffff;
+}
+
+/******** end about style *********/
+
+/******** start Services style ********/
+.services .main-titel {
+    position: relative;
+    height: 100px;
+}
+
+.services .main-titel h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.services .main-titel::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 10%;
+    bottom: -20px; 
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    background-size: cover; 
+    z-index: -1;
+}
+
+
+.portfolio button{
+    background-color:transparent !important;
+    color: #111 !important;
+}
+.portfolio .nav-link {
+    position: relative;
+    padding-bottom: 5px; 
+}
+
+.portfolio .nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.portfolio .nav-link:hover::after,
+.portfolio .nav-link.active::after {
+    width: 90%;
+}
+
+.services .main-titel{
+    position: relative;
+}
+.services .main-titel::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.services .row .card{
+    padding: 50px 20px;
+    -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.services .row .card h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+.services .row .card p{
+    word-spacing: 2px;
+    font-size: 14px;
+}
+.services-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: color, background-color .5s;
+}
+.card:hover .services-icon{
+    background-color: #1C1C1C;
+    color: #F7F7F7;
+    
+}
+.services-icon i{
+    font-size: 24px;
+    margin: 10px 20px;
+}
+/******** end Services style ********/
+
+/******** start Portfolio style ********/
+.portfolio .picture,
+.ourTeam .picture{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .picture .portfolio-layer{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.portfolio .picture:hover .portfolio-layer{
+    opacity: 1;
+}
+.portfolio .picture .portfolio-layer .layer-content .icons,
+.ourTeam .picture .portfolio-layer .layer-content .icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.portfolio .picture .portfolio-layer .layer-content .icons i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    line-height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; 
+    transition: all 0.5s ease-in-out;
+}
+.portfolio .picture .portfolio-layer .layer-content .icons i:hover,
+.ourTeam .picture .portfolio-layer .layer-content .icons i:hover{
+    background:#eee;
+    color: #111;
+}
+.portfolio .picture .portfolio-layer .layer-content{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    transition: top 0.5s ease-in-out;
+}
+.portfolio .picture:hover .layer-content{
+    top: 45%;
+}   
+/******** end Portfolio style ********/
+
+/******** start Testimonials style ********/
+.client .carousel img{
+    width: 100px;
+    border-radius: 50%;
+}
+/******** end Testimonials style ********/
+
+/************ start numbers ***************/
+.numbers .item .icon {
+    color:#343434;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .numbers .item h3 {
+    color: #343434;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+  .numbers .item p {
+    color: #1c1c1c9e;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+/**************** end numbers ***************/
+
+/******** start Our Team  style ********/
+.ourTeam .card {
+    overflow: hidden;
+}
+
+.ourTeam .picture {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ourTeam .picture:hover {
+    transform: scale(1.1);
+}
+
+.ourTeam .picture .portfolio-layer {
+    width: 88%;
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9e1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.ourTeam .picture:hover .portfolio-layer {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+.ourTeam .picture .portfolio-layer .layer-content .icons i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    line-height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; 
+    transition: all 0.5s ease-in-out;
+}
+.ourTeam .card-body{
+    background-color: #5B5B5B;
+    color: #F7F7F7;
+}
+/******** end Our Team style ********/
+
+/******** start Contact Us style ********/
+.contact-us{
+    width: 90%;
+    margin: auto;
+}
+.contact-us .content-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60px; 
+    height: 60px;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+}
+
+.contact-us .content-icon i {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    color: #111;
+    line-height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-us .card:hover i {
+    background:#111;
+    color:#F4F4F4 ;
+}
+.contact-us .submit-btn{
+    display: flex;
+    margin-top: 30px;
+    padding: 10px 40px;
+    background:#111;
+    color:#F4F4F4 ;
+    border-radius: 5px;
+    border: none;
+}
+/******** end Contact Us style ********/
+
+
+/******** start footer style ********/
+footer{
+    background-color: #1C1C1C;
+    padding: 30px;
+    margin: 0;
+}
+footer span{
+    font-weight: 200;
+    font-size: 14px;
+    color: #f4f4f4b7;
+}
+/******** end footer style ********/

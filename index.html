@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dainles</title>
+    <link href="imgs/favicon.ico" rel="icon" type="image/png"/>
+    <!-- =================== start font ======================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- =================== end font ========================== -->
+
+    <!-- =================== start bootstrap ======================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- =================== end bootstrap ========================== -->
+
+    <!-- =================== start fontawesome ======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- =================== end fontawesome ============================= -->
+
+    <!-- =================== start maincss ======================== -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- =================== end maincss ========================== -->
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll"> 
+    <!--===================== start nav =========================-->
+    <nav class="navbar navbar-expand-lg fixed-top mynav" id="navbar-scroll">
+      <div class="container">
+          <a class="navbar-brand fw-bold" href="#">DANIELS</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav links ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#work">Works</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#client">Clients</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!--===================== end nav ==========================-->
+
+    <!-- =====================start header======================-->
+     <header class="home" id="home" >
+        <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+            <div class="content align-self-center text-white text-center">
+                <span class="fw-bold hello">Hello</span>
+                <div class="wrapper">
+                    <h1>
+                        <span class="static">I Am</span>
+                        <span id="element"></span>
+                    </h1>
+                </div>
+                <div class="icons mt-4 d-flex justify-content-center align-items-center">
+                  <a href="#" class="me-3">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="me-3">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="me-3">
+                      <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="me-3">
+                      <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="#" class="me-3">
+                      <i class="fa-brands fa-behance"></i>
+                  </a>
+              </div>
+              
+            </div>
+        </div>     
+     </header>
+    <!--========================= end header====================-->
+
+
+    <!-- =================== start about ======================== -->
+     <section class="about padding-section " id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-image" style="position: relative;">
+              <img src="./imgs/hero.jpg" alt="about image" class="image">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-info">
+              <h2 class="fw-bold">About Me.</h2>
+              <h6 class="text-muted  mb-4">UI / UX Designer & Web Developer</h6>
+              <p class="text-muted">I am <span class="fw-bold">Jerry Daniels</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                 Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five centuries,
+                 but also the leap into electronic but also the leap into electronic typesetting,remaining essentially unchanged.
+                 It was popularised in the 1960s with the release of Letraset sheets containing
+              </p>
+            </div>
+            <div class="skills">
+              <div class="item">
+                <div class="skills-progress">
+                  <h6>Web Design</h6>
+                  <span data-value="95%" style="width: 95%;"></span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="skills-progress">
+                  <h6>Branding</h6>
+                  <span data-value="80%" style="width: 80%;"></span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="skills-progress">
+                  <h6>Development</h6>
+                  <span data-value="90%" style="width: 90%;"></span>
+                </div>
+              </div>
+            </div>
+            <div class="btuns">
+              <button class="download btn btn-dark  px-4 py-2 border border-1 border-dark">Download C.V</button>
+              <button class="contact btn btn-light px-4 py-2 border border-1 border-dark">Contact Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- =================== end about   ======================== -->
+
+    <!-- =================== start Services ======================== -->
+    <section class="services padding-section bg-main" id="services">
+      <div class="container">
+        <div class="main-titel text-center">
+          <h2 class="fw-bolder pb-5 fs-1">Services.</h2>
+        </div>
+        <div class="row">
+          <!-- card 1 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-center py-4 border-0">
+                <div class="services-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <h4>Web Design</h4>
+                  </div>
+                  <div class="card-text">
+                    <p class="text-muted">Lorem Ipsum is simply dummy text of the Lorem
+                      Ipsum has been the industry's standard dummy text ever.
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-center py-4 border-0">
+              <div class="services-icon">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Branding</h4>
+                </div>
+                <div class="card-text">
+                  <p>Lorem Ipsum is simply dummy text of the Lorem
+                    Ipsum has been the industry's standard dummy text ever.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-center py-4 border-0">
+              <div class="services-icon">
+                <i class="fa-solid fa-umbrella"></i> 
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Development</h4>
+                </div>
+                <div class="card-text">
+                  <p>Lorem Ipsum is simply dummy text of the Lorem
+                    Ipsum has been the industry's standard dummy text ever.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col-sm-6 col-md-4 mt-4">
+            <div class="card text-center py-4 border-0">
+              <div class="services-icon">
+                <i class="fa-regular fa-gem"></i>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Creative Design</h4>
+                </div>
+                <div class="card-text">
+                  <p>Lorem Ipsum is simply dummy text of the Lorem
+                    Ipsum has been the industry's standard dummy text ever.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="col-sm-6 col-md-4 mt-4">
+            <div class="card text-center py-4 border-0">
+              <div class="services-icon">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Fully Responsive</h4>
+                </div>
+                <div class="card-text">
+                  <p>Lorem Ipsum is simply dummy text of the Lorem
+                    Ipsum has been the industry's standard dummy text ever.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="col-sm-6 col-md-4 mt-4">
+            <div class="card text-center py-4 border-0">
+              <div class="services-icon">
+                <i class="fa-solid fa-camera"></i>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Retina Ready</h4>
+                </div>
+                <div class="card-text">
+                  <p>Lorem Ipsum is simply dummy text of the Lorem
+                    Ipsum has been the industry's standard dummy text ever.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =================== end Services   ======================== -->
+
+    <!-- =================== start Portfolio ======================== -->
+    <section class="portfolio padding-section" id="work">
+      <div class="container">
+        <div class="main-titel text-center">
+          <h2 class="fw-bolder pb-5 fs-1">Portfolio.</h2>
+        </div>
+        <ul class="nav nav-pills mb-3 justify-content-center" 
+        id="pills-tab" 
+        role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active"
+            id="pills-all-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-all"
+            type="button" role="tab" 
+            aria-controls="pills-all" 
+            aria-selected="true">
+            All
+            </button>
+          </li>
+
+          <li class="nav-item"role="presentation">
+            <button class="nav-link"
+            id="pills-brand-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-brand"
+            type="button" role="tab"
+            aria-controls="pills-brand"
+            aria-selected="false">
+            Brand
+          </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" 
+              id="pills-design-tab"
+              data-bs-toggle="pill" 
+              data-bs-target="#pills-design"
+              type="button" role="tab" 
+              aria-controls="pills-design" 
+              aria-selected="false">
+              Design
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" 
+              id="pills-graphic-tab"
+              data-bs-toggle="pill" 
+              data-bs-target="#pills-graphic"
+              type="button" role="tab" 
+              aria-controls="pills-graphic" 
+              aria-selected="false">
+              Graphic
+            </button>
+          </li>
+        </ul>
+
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" 
+          id="pills-all" 
+          role="tabpanel" 
+          aria-labelledby="pills-all-tab" 
+          tabindex="0">
+            <p>
+              <div class="row">
+                <div class="col-sm-6 col-md-4 pb-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/1.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/2.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/3.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/4.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/5.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/6.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+
+          <div class="tab-pane fade" 
+          id="pills-brand" 
+          role="tabpanel" 
+          aria-labelledby="pills-brand-tab" 
+          tabindex="0">
+          <p>
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="picture">
+                  <img class="card-img-top" src="./imgs/portfolio/4.jpg" alt="portfolio">
+                  <div class="portfolio-layer">
+                    <div class="layer-content">
+                      <span>WEB DESIGN</span>
+                      <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <i class="fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="picture">
+                  <img class="card-img-top" src="./imgs/portfolio/6.jpg" alt="portfolio">
+                  <div class="portfolio-layer">
+                    <div class="layer-content">
+                      <span>WEB DESIGN</span>
+                      <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <i class="fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p>
+          </div>
+          <div class="tab-pane fade" 
+          id="pills-design" 
+          role="tabpanel" 
+          aria-labelledby="pills-design-tab" 
+          tabindex="0">
+          <p>
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="picture">
+                  <img class="card-img-top" src="./imgs/portfolio/2.jpg" alt="portfolio">
+                  <div class="portfolio-layer">
+                    <div class="layer-content">
+                      <span>WEB DESIGN</span>
+                      <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <i class="fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="picture">
+                  <img class="card-img-top" src="./imgs/portfolio/5.jpg" alt="portfolio">
+                  <div class="portfolio-layer">
+                    <div class="layer-content">
+                      <span>WEB DESIGN</span>
+                      <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <i class="fa-solid fa-link"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p>
+          </div>
+
+          <div class="tab-pane fade" 
+            id="pills-graphic" 
+            role="tabpanel" 
+            aria-labelledby="pills-graphic-tab" 
+            tabindex="0">
+            <p>
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/1.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/3.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="picture">
+                    <img class="card-img-top" src="./imgs/portfolio/5.jpg" alt="portfolio">
+                    <div class="portfolio-layer">
+                      <div class="layer-content">
+                        <span>WEB DESIGN</span>
+                        <div class="icons">
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- =================== end Portfolio   ======================== -->
+
+    <!-- =================== start Testimonials ======================== -->
+     <section class="client padding-section bg-main" id="client">
+      <div class="container">
+        <div class="main-titel text-center">
+          <h2 class="fw-bolder pb-5 fs-1">Testimonials.</h2>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-black" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-black" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-black"  aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item text-center active">
+              <img src="./imgs/testi-1.jpg" class="" alt="client image">
+              <div class="carousel-content pb-5 pt-2">
+                <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam, dolore odio dolores minima similique ad,
+                  suscipit accusamus officiis ullam architecto hic sequi, 
+                  inventore dolorum quaerat.
+                </p>
+                <h5>john miller</h5>
+                <span class="text-muted ">customer</span>
+              </div>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img src="./imgs/testi-2.jpg" class="" alt="client image">
+              <div class="carousel-content pb-5 pt-2">
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus ut nemo ea expedita soluta eveniet quos quisquam
+                  saepe veniam odio placeat illo,
+                  iusto minus ratione?
+                </p>
+                <h5>alex smith</h5>
+                <span class="text-muted ">customer</span>
+              </div>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img src="./imgs/testi-3.jpg" class="" alt="client image">
+              <div class="carousel-content pb-5 pt-2">
+                <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta at ut aspernatur quis dolorem impedit cupiditate itaque,
+                  natus officia possimus.
+                </p>
+                <h5>joey ostin</h5>
+                <span class="text-muted ">customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- =================== end Testimonials   ======================== -->
+
+    <!--==================== Numbers    =======================-->
+      <div class="numbers padding-section text-center ">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="item main-color">
+                  <span class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                  </span>
+                  <h3 class="counter">850</h3>
+                  <p>Happy Customers</p>
+                </div>
+              </div>
+    
+              <div class="col-md-3">
+                <div class="item main-color">
+                  <span class="icon">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  </span>
+                  <h3 class="counter">230</h3>
+                  <p>Complete Projects</p>
+                </div>
+              </div>
+    
+              <div class="col-md-3">
+                <div class="item main-color">
+                  <span class="icon">
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                  </span>
+                  <h3 class="counter">9450</h3>
+                  <p>Lines Of Code</p>
+                </div>
+              </div>
+    
+              <div class="col-md-3">
+                <div class="item main-color">
+                  <span class="icon">
+                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  </span>
+                  <h3 class="counter">780</h3>
+                  <p>Files Downloaded</p>
+                </div>
+              </div>
+            </div>
+      </div>
+    <!--==================== End Numbers ======================-->
+
+    <!-- =================== start Our Team ======================== -->
+     <section class="ourTeam padding-section bg-main " id="team ">
+      <div class="container">
+        <div class="main-titel text-center">
+          <h2 class="fw-bolder pb-5 fs-1 main-color">Our Team.</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="picture">
+                <img class="card-img-top" src="./imgs/1.jpg" alt="portfolio">
+                <div class="portfolio-layer">
+                  <div class="layer-content">
+                    <div class="icons">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title">John Doe</h4>
+                <p  class="card-text fw-bolder fs-4">Front-End Developer</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="picture">
+                <img class="card-img-top" src="./imgs/2.jpg" alt="portfolio">
+                <div class="portfolio-layer">
+                  <div class="layer-content">
+                    <div class="icons">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title">Dave Wood</h4>
+                <p  class="card-text fw-bolder fs-4">Back-End Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="picture">
+                <img class="card-img-top" src="./imgs/1.jpg" alt="portfolio">
+                <div class="portfolio-layer">
+                  <div class="layer-content">
+                    <div class="icons">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title">John Doe</h4>
+                <p  class="card-text fw-bolder fs-4">Front-End Developer</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+     </section>
+    <!-- =================== end Our Team   ======================== -->
+
+    <!-- =================== start Contact Us ======================== -->
+     <section class="contact-us padding-section" id="contact">
+      <div class="container">
+        <div class="main-titel text-center">
+          <h2 class="fw-bolder pb-5 fs-1 main-color">Contact Us.</h2>
+        </div>
+        <div class="row g-4 pt-4">
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-center py-4 border-0">
+              <div class="content-icon">
+                <i class="fa-solid fa-location-arrow main-color"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold main-color">Address</h5>
+                <p class="card-text text-muted">6834 Hollywood Blvd - Los Angeles CA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-center py-4 border-0">
+              <div class="content-icon">
+                <i class="fa-solid fa-envelope main-color"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold main-color">Email</h5>
+                <p class="card-text text-muted">Support@website.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card text-center py-4 border-0">
+              <div class="content-icon">
+                <i class="fa-solid fa-phone main-color"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold main-color">Phone</h5>
+                <a href="tel:+20 010 2517 8918" class="text-muted">+20 010 2517 8918</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          <div class="row g-4 pt-4">
+            <div class="col-md-6">
+              <div class="form-input mb-2">
+                <input class="form-control bg-main" type="text" name="name" placeholder="Name">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-input mb-2">
+                <input class="form-control bg-main" type="email" name="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-input mb-2">
+                <textarea class="form-control bg-main" name="message" placeholder="message"></textarea>
+              </div>
+            </div>
+          </div>
+          <button class ="submit-btn">
+            Submit
+          </button>
+        </form>
+
+      </div>
+     </section>
+    <!-- =================== end Contact Us   ======================== -->
+
+
+    <!-- =================== start footer ======================== -->
+     <footer>
+      <span>Copy Right 2018 © By Daniels All Rights Reserved</span>
+     </footer>
+    <!-- =================== end footer   ======================== -->
+
+
+
+
+    <!-- =================== start typejs ======================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- =================== end typejs   ======================== -->
+
+    <!-- =================== js bootstrap link ======================== -->
+     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- =================== js bootstrap link ========================== -->
+
+    <!-- =================== js link ======================== -->
+     <script src="./js/main.js"></script>
+    <!-- =================== js link========================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
